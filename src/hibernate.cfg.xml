@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+   <session-factory>
+   <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+   <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+   <property name="hibernate.connection.url">jdbc:mysql://127.7.147.130/stock</property>
+   <property name="hibernate.connection.username">admin3HAWGp6</property>
+   <property name="hibernate.connection.password">qqktAIaDBtGU</property>
+   <property name="hibernate.hbm2ddl.auto">update</property>
+   <property name="show_sql">false</property>
+   <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.c3p0.min_size">5</property>
+  <property name="hibernate.c3p0.max_size">20</property>
+  <property name="hibernate.c3p0.timeout">30000</property>
+  <property name="hibernate.c3p0.max_statements">50</property>
+  <property name="hibernate.c3p0.idle_test_period">3000</property>
+   <mapping class="com.atom217.mapping.StockInfo"/>
+   <mapping class="com.atom217.mapping.StockPeek"/>
+   <mapping class="com.atom217.mapping.StockHighLow"/>
+</session-factory>
+</hibernate-configuration>
